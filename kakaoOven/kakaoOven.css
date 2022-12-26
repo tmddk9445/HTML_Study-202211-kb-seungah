@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0px; padding: 0px;
+}
+
+.gnb {
+    background-color: #000000ab;
+    height: 45px;
+}
+
+.gnbC {
+    display: inline-block;
+    width: 1050px;
+    margin: auto;
+}
+
+.logo {
+    width: 1050px;
+    display: inline;
+    margin: 0px auto;
+}
+
