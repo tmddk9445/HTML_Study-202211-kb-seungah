@@ -83,7 +83,7 @@ header {
     font-size: 11px;
     
 }
-
+/*<<<<<<<<<<<<<<<<<< main영역 >>>>>>>>>>>>>>>>>*/
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -126,7 +126,7 @@ header {
     height: 34px;
     background-color: #fff;
     color: #555;
-   
+    
 }
 
 .search-project .fa-magnifying-glass {
