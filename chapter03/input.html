@@ -44,8 +44,12 @@
     </form>
 
     <form action="">
-        <input type="number" name="stock" id="stock-id" min="0" max="10" step="2"><label for="stock-id">수량(<span class="stock-num"></span>)</label for="stock-id"><br>
-        <input type="range" name="stock2" id="stock-id2" min="0" max="10"><label for="stock-id2">수량2(<span class="stock-num"></span>)</label for="stock-id2"><br>
+        <input type="number" name="stock" id="stock-id" min="0" max="10" step="2"><label for="stock-id">수량(<span class="stock-num"></span>)
+        </label for="stock-id"><br>
+        
+        <input type="range" name="stock2" id="stock-id2" min="0" max="10"><label for="stock-id2">수량2(<span class="stock-num"></span>)
+        </label for="stock-id2"><br>
+        
         <button>전송</button>
     </form>
 
@@ -58,6 +62,19 @@
         <textarea name="memo" id="memo" cols="30" rows="10" placeholder="메모를 입력하세요."></textarea>
     </form>
 
+    <script>
+        const stock1 = document.querySelector("#stock-id");
+        const stock2 = document.querySelector("#stock-id2");
+
+        stock1.onchange = () => {
+            document.querySelectorAll(".stock-num")[0].textContent = stock1.value;
+        }
+        stock2.onchange = () => {
+            document.querySelectorAll(".stock-num")[1].textContent = stock2.value;
+        }
+
+    </script>
+    
     <form action="">
         <select name="programmingLanguage" multiple>
             <option value="java">java</option>
@@ -74,17 +91,5 @@
 
     </form>
 
-    <script>
-        const stock1 = document.querySelector("#stock-id");
-        const stock2 = document.querySelector("#stock-id2");
-
-        stock1.onchange = () => {
-            document.querySelectorAll(".stock-num")[0].textContent = stock1.value;
-        }
-        stock2.onchange = () => {
-            document.querySelectorAll(".stock-num")[1].textContent = stock2.value;
-        }
-
-    </script>
 </body>
 </html>
