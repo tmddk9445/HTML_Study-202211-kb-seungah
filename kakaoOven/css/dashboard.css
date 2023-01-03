@@ -14,9 +14,7 @@ a {
 .container {
     margin: 0px auto;
     padding: 0px 15px;
-
     width: 1170px;
-    
 }
 
 header {
@@ -81,7 +79,6 @@ header {
 
 .dropdown-toggle .fa-caret-down {
     font-size: 11px;
-    
 }
 /*<<<<<<<<<<<<<<<<<< main영역 >>>>>>>>>>>>>>>>>*/
 .page-header {
